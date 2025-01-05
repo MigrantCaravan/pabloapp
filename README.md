@@ -2,6 +2,8 @@
 
 PabloApp is a React application built with Vite that uses the OpenAI API to provide moral advice based on user input. The app allows users to input a message and receive a response indicating whether the action described in the message is morally correct.
 
+![Screenshot](/public/Screenshot.png)
+
 ## Features
 
 - **React**: Utilizes React for building the user interface.
