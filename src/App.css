@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea {
+  height: 100%;
+  resize: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: large;
+}
+
+textarea::placeholder {
+  padding: 5px;
+  font-size: large;
+}
+
+button {
+  border-radius: 6px;
+}
+
+.multicolor-border {
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(
+    45deg,
+    red 0%,
+    orange 10%,
+    yellow 20%,
+    green 30%,
+    blue 40%,
+    indigo 50%,
+    violet 60%,
+    red 70%,
+    orange 80%,
+    yellow 90%,
+    green 100%
+  );
+}
