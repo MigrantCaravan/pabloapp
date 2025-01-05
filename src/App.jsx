@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./App.css";
 
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
@@ -49,15 +50,15 @@ function App() {
   return (
     <div className="App">
       <h1>¿Debés hacerlo Pablo?</h1>
-      <div className="message">
-        <textarea
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Escribí acá tu pregunta..."
-          cols={50}
-          rows={10}
-          value={message}
-        />
-      </div>
+
+      <textarea
+        onChange={(e) => setMessage(e.target.value)}
+        placeholder="Escribí acá tu pregunta..."
+        cols={50}
+        rows={10}
+        value={message}
+      />
+
       <div>
         <button
           disabled={!message.trim()}
